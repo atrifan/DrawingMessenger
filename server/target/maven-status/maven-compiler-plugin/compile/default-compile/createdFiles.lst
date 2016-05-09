@@ -1,0 +1,5 @@
+ro\atrifan\server\controller\GroupController.class
+ro\atrifan\server\util\QueueProducer.class
+ro\atrifan\server\controller\DashBoardController.class
+ro\atrifan\server\util\PropertiesReader.class
+ro\atrifan\server\controller\ClientController.class

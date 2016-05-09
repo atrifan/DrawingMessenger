@@ -1,0 +1,17 @@
+ro\atrifan\persistence\entities\JSONMessagesModel.class
+ro\atrifan\persistence\dialect\CustomDialect.class
+ro\atrifan\persistence\dao\impl\AbstractDaoImpl.class
+ro\atrifan\persistence\dao\impl\DashBoardDaoImpl.class
+ro\atrifan\persistence\dao\GroupDao.class
+ro\atrifan\persistence\entities\User.class
+ro\atrifan\persistence\dao\AbstractDao.class
+ro\atrifan\persistence\dao\UserDao.class
+ro\atrifan\persistence\dao\DashBoardDao.class
+ro\atrifan\persistence\entities\GroupUserMap.class
+ro\atrifan\persistence\entities\Group.class
+ro\atrifan\persistence\dao\impl\UserDaoImpl.class
+ro\atrifan\persistence\dao\impl\GroupDaoImpl.class
+ro\atrifan\persistence\dao\GroupUserDao.class
+ro\atrifan\persistence\entities\DashBoard.class
+ro\atrifan\persistence\dao\impl\GroupUserDaoImpl.class
+ro\atrifan\persistence\entities\JSONDrawingsModel.class

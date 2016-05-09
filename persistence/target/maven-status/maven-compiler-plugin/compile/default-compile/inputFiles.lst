@@ -1,0 +1,17 @@
+F:\FACULTATE\IDP\repo\persistence\src\main\java\ro\atrifan\persistence\entities\DashBoard.java
+F:\FACULTATE\IDP\repo\persistence\src\main\java\ro\atrifan\persistence\dao\impl\DashBoardDaoImpl.java
+F:\FACULTATE\IDP\repo\persistence\src\main\java\ro\atrifan\persistence\entities\Group.java
+F:\FACULTATE\IDP\repo\persistence\src\main\java\ro\atrifan\persistence\entities\GroupUserMap.java
+F:\FACULTATE\IDP\repo\persistence\src\main\java\ro\atrifan\persistence\dialect\CustomDialect.java
+F:\FACULTATE\IDP\repo\persistence\src\main\java\ro\atrifan\persistence\dao\impl\UserDaoImpl.java
+F:\FACULTATE\IDP\repo\persistence\src\main\java\ro\atrifan\persistence\dao\impl\AbstractDaoImpl.java
+F:\FACULTATE\IDP\repo\persistence\src\main\java\ro\atrifan\persistence\dao\impl\GroupUserDaoImpl.java
+F:\FACULTATE\IDP\repo\persistence\src\main\java\ro\atrifan\persistence\dao\AbstractDao.java
+F:\FACULTATE\IDP\repo\persistence\src\main\java\ro\atrifan\persistence\entities\JSONMessagesModel.java
+F:\FACULTATE\IDP\repo\persistence\src\main\java\ro\atrifan\persistence\entities\JSONDrawingsModel.java
+F:\FACULTATE\IDP\repo\persistence\src\main\java\ro\atrifan\persistence\dao\UserDao.java
+F:\FACULTATE\IDP\repo\persistence\src\main\java\ro\atrifan\persistence\dao\GroupDao.java
+F:\FACULTATE\IDP\repo\persistence\src\main\java\ro\atrifan\persistence\entities\User.java
+F:\FACULTATE\IDP\repo\persistence\src\main\java\ro\atrifan\persistence\dao\GroupUserDao.java
+F:\FACULTATE\IDP\repo\persistence\src\main\java\ro\atrifan\persistence\dao\impl\GroupDaoImpl.java
+F:\FACULTATE\IDP\repo\persistence\src\main\java\ro\atrifan\persistence\dao\DashBoardDao.java

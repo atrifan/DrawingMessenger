@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+
+<context:annotation-config />
+	<tx:annotation-driven />
+
+        <bean class="ro.atrifan.server.controller.ClientController"/>
+        <bean class="ro.atrifan.server.controller.GroupController"/>
+        <bean class="ro.atrifan.server.controller.DashBoardController"/>
+
+        <bean id="entityManagerFactory"
+              class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+                <property name="persistenceUnitName" value="dashBoard" />
+                <property name="dataSource" ref="dataSource" />
+                <property name="jpaProperties">
+                        <props>
+                                <prop key="hibernate.hbm2ddl.auto"></prop>
+                                <prop key="hibernate.dialect">ro.atrifan.persistence.dialect.CustomDialect</prop>
+                        </props>
+                </property>
+        </bean>
+
+        <bean id="dataSource"
+              class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+                <property name="driverClassName" value="org.postgresql.Driver" />
+                <property name="url" value="jdbc:postgresql://localhost:5432/dashBoard" />
+                <property name="username" value="postgres" />
+                <property name="password" value="Ultimate89." />
+        </bean>
+
+        <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+                <property name="entityManagerFactory" ref="entityManagerFactory" />
+        </bean>
+
+        <bean class="org.springframework.beans.factory.config.CustomScopeConfigurer">
+                <property name="scopes">
+                        <map>
+                                <entry key="thread">
+                                        <bean class="org.springframework.context.support.SimpleThreadScope" />
+                                </entry>
+                        </map>
+                </property>
+        </bean>
+
+        <bean id="jbossClientRequest" class="javax.ws.rs.client.ClientBuilder"
+              factory-method="newClient" scope="thread">
+                <aop:scoped-proxy />
+        </bean>
+
+
+        <bean id="userDao" class="ro.atrifan.persistence.dao.impl.UserDaoImpl" />
+        <bean id="groupDao" class="ro.atrifan.persistence.dao.impl.GroupDaoImpl" />
+        <bean id="groupUserDao" class="ro.atrifan.persistence.dao.impl.GroupUserDaoImpl" />
+        <bean id="dashBoardDao" class="ro.atrifan.persistence.dao.impl.DashBoardDaoImpl" />
+
+
+</beans>
+
+
+
